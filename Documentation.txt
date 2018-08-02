@@ -1,0 +1,58 @@
+Gorilla Gainz is a website made for selling fitness products.
+
+It was made using react + kinvey. 
+Youtube API, JQUERY.
+
+
+
+Navbar{
+-The NavBar Changed Depending on your login state.
+Stylish Gorilla Gif on the left end.
+If you're logged in you can access the products and profile section.
+User Appears on the rightCorner with his profilePicture.
+The login/register buttons dissapear and the logout button appears.
+
+}
+
+
+
+Footer{
+-Simple Text Footer
+}
+
+AboutPage{
+Information About Gorilla Gainz with a button for Gorilla Factz
+}
+
+MediaPage{
+Contains Youtube API, playing a GorillaGainz video
+}
+
+
+NonAdminProducts{
+Can see all products in the database, displayed in productCards, can access the "more information" button
+}
+
+AdminProducts{
+Can Do Everything NonAdminProducts is able to + access to the productCreation pannel.
+}
+
+nonAdminMoreInformation{
+Access to displayed information and picture about specific product
+}
+
+AdminMoreInformation{
+Everything nonAdminMoreinformation does + acces to update and delete functions
+}
+
+ProfilePage{
+Displays Information About User and abiliy for user to change profile picture.
+}
+
+
+
+
+
+
+
+
