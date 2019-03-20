@@ -1,7 +1,6 @@
-#YouTubeHolder{
- display:inline-block;
- border-style:solid;
- border-color:black;
- padding: 13px 40px;
-  
+#YouTubeHolder {
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+  padding: 13px 40px;
 }

@@ -1,25 +1,16 @@
 header {
-    position: relative;
-    
-    
+  position: relative;
 }
-
-.logo, .header {
-    
-}
-
-
 
 #profile span {
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 #profile a {
-    display: inline-block;
-    text-decoration: none;
-    
+  display: inline-block;
+  text-decoration: none;
 }
 
 #profile a:hover {
-    color: red;
+  color: red;
 }

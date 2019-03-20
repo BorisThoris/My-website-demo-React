@@ -1,0 +1,54 @@
+#productCreater {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
+  border-radius: 2%;
+  margin: 13px 20px;
+  display: inline-block;
+  text-align: center;
+  font-family: arial;
+  left: 0;
+  height: 700px;
+  min-width: 350px;
+  background: rgba(199, 221, 197, 0.267);
+}
+
+button2 {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 60%;
+  font-size: 18px;
+}
+
+#crtDescription2 {
+  width: 95%;
+  height: 150px;
+  background-color: rgba(221, 197, 197, 0.363);
+  resize: none;
+  margin: 20px 0px;
+}
+
+#crtTitle2 {
+  width: 95%;
+  height: 50px;
+  background-color: rgba(221, 197, 197, 0.363);
+  resize: none;
+  margin: 20px 0px;
+}
+
+#crtPrice2 {
+  width: 35%;
+  background-color: rgba(221, 197, 197, 0.363);
+  resize: none;
+  margin: 20px 0px;
+}
+
+#prdPicUrl2 {
+  background-color: rgba(221, 197, 197, 0.363);
+  resize: none;
+  margin: 20px 0px;
+}

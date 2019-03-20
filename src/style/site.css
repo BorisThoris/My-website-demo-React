@@ -1,140 +1,107 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-.div {
-    border: 1px solid black;
-}
-
+/* Body Background And Size */
 body {
-   
-     background: url("1 (1).jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-color: #cccccc;
-    background-repeat: no-repeat;
-   
+  background: url("1 (1).jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
 }
 
-#container {
-    margin: 10px;
-}
-
+/* Logo */
 .content {
-    background: #ffffff;
-    background-image: url("/gorillaLogo.jpg");
-    background-repeat: no-repeat;
-    background-size: 300px 100px;
+  background: #ffffff;
+  background-image: url("/gorillaLogo.jpg");
+  background-repeat: no-repeat;
+  background-size: 300px 100px;
 }
-
 
 footer {
-    position:bottom;
-    left:0px;
-    bottom:0px;
-    font-size:50px;
-    height:60px;
-    width:100%;
-    font-weight: 900;
-    opacity:0.70;
-    color: black;
-    
-}
-#logo{
-    background-image: url("/gorillaLogo.jpg");
+  text-align: center;
+  position: relative;
+  margin: auto;
+
+  font-size: 60px;
+
+  opacity: 0.7;
+  color: black;
+  background-color: rgba(221, 197, 197, 0.363);
 }
 
-.welcome {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-
-.welcome>* {
-    vertical-align: top;
-    overflow: auto;
+#logo {
+  background-image: url("/gorillaLogo.jpg");
 }
 
 .about {
-    background: #ddf9c0;
-    padding: 20px;
-    margin: 10px;
-    height: 340px;
+  background: #ddf9c0;
+  padding: 20px;
+  margin: 10px;
+  height: 340px;
 }
 
 .signup {
-    float: right;
-    width: 200px;
+  float: right;
+  width: 200px;
 }
 
 #loginForm {
-    display: inline-block;
-    color:black;
-    margin: 10px;
-    padding: 10px;
-    height: 180px;
-    position: relative;
-    
+  display: inline-block;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  height: 180px;
+  position: relative;
 }
 
-#loginForm>* {
-    width: 230px;
-    box-sizing: border-box;
-    
+#loginForm > * {
+  width: 230px;
+  box-sizing: border-box;
 }
 
 #registerForm {
-    display: inline-block;
-    color:black;
-    margin: 10px;
-    padding: 10px;
-    height: 180px;
-    position: relative;
-    
+  display: inline-block;
+  color: black;
+  margin: 10px;
+  padding: 10px;
+  height: 180px;
+  position: relative;
 }
 
-#isAdmin{
-    color:red;  
-    
+#isAdmin {
+  color: red;
 }
-#isAdmin.span{
-    color:red;
-}
-
-#registerForm>* {
-    width: 230px;
-    box-sizing: border-box;
-    
-    
+#isAdmin.span {
+  color: red;
 }
 
-#btnLogin, #btnRegister {
-    display: block;
-    position: relative;
-    bottom: 0px;    
-    color: black;
-    font-weight: 800;
-    background-color: lightgreen;
-    border-color:black;
-    border-width: 800;
-    
+#registerForm > * {
+  width: 230px;
+  box-sizing: border-box;
 }
+
+#btnLogin,
+#btnRegister {
+  display: block;
+  position: relative;
+  bottom: 0px;
+  color: black;
+  font-weight: 800;
+  background-color: lightgreen;
+  border-color: black;
+  border-width: 800;
+}
+
 h3 {
-font-family: Verdana;
-color: blue;
+  font-family: Verdana;
+  color: blue;
 }
 
 p {
-font-family: Garamond;
-font-size: 16px;
+  font-family: Garamond;
+  font-size: 16px;
 }
 
-
+#YouTubeHolder2 {
+  margin: auto;
+  width: 1200px;
+}

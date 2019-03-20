@@ -1,136 +1,129 @@
 .ProductView {
-  
-  
   margin: 20px 130px;
   text-align: center;
   font-family: arial;
-  display:inline-block;
-}
-productViewDiv{
-    display: inline-block;
+  display: inline-block;
 }
 
-
-
-#productInfo{
-    
-    right: 0;
-    padding: 20px 15px;
-    margin: 20px 50px;
-    float:right;
-    width: 600px;
-    height: 710px;
-    border-color:black;
-    border-width: 800;
-    background-color: rgba(221, 197, 197, 0.363);
-    border-radius: 3%;
-    position:relative;
-    
-    
+#manage {
+  width: 100%;
+  height: 100vh;
 }
 
-#productImage{
-    
-    margin: 20px -100px;
-    
-    border-radius: 3%;
+#productViewDiv {
+  display: flex;
+  position: relative;
+  margin: auto;
+  height: auto;
+  max-width: 2000px;
 }
 
+#productInfo {
+  padding: 20px 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  width: auto;
+  height: auto;
+  border-radius: 3%;
 
-#productTitle{
-    font-weight: 900;
-    text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-color: black;
+  border-width: 800;
+  background-color: rgba(221, 197, 197, 0.363);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
 }
 
-#description{
-    
-    height: 500px;
-    
-    font-weight: 900;
-    border-color:black;
-    border-radius: 10px;
-    border-width: 800;
-    
-    
-    text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
-    
+#productImage {
+  margin: auto;
+  background-color: rgba(221, 197, 197, 0.363);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
+  border-radius: 3%;
 }
 
-#btnUpdate{
-display: inline-block;
-    position: relative;
-    bottom: 0px;
-    height: 50px;
-    width:  200px;
-    margin: 5px;
-    color: black;
-    font-weight: 800;
-    background-color: #4CAF50;
-    border-color:black;
-    border-width: 800;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-    opacity: 0.8;
+#description {
+  height: 500px;
+
+  font-weight: 900;
+  border-color: black;
+  border-radius: 10px;
+  border-width: 800;
+
+  text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-#btnDelete{
-display: inline-block;
-    position: relative;
-    float:right;
-    opacity: 0.8;       
-    height: 50px;
-    width:  200px;
-    margin: 5px;
-    bottom: 0px;    
-    color: black;
-    font-weight: 800;
-    background-color: #4CAF50;
-    border-color:black;
-    border-width: 800;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
-    
+#btnUpdate,
+#btnDelete {
+  height: 50px;
+  width: 200px;
+  margin: 5px;
+  color: black;
+  font-weight: 800;
+  background-color: #4caf50;
+  border-color: black;
+  border-width: 800;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7);
 }
 
-#priceDiv{
-    
+#updateDesc {
+  resize: none;
+  text-align: center;
+  background: white;
+  font-weight: 900;
+  background: none;
+  text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-#updateDesc{
-    resize:none;
-    background: white;
-    font-weight:900;
-    background:none;
-    text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
+#updateTitle {
+  resize: none;
+  font-weight: 900;
+  font-size: 25px;
+  width: 500px;
+  height: 50px;
+  background: none;
+  text-align: center;
+  overflow: hidden;
+  border-style: none;
+  text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-#updateTitle{
-    resize:none;
-    background: white;
-    font-weight:900;
-    width: 500px;
-    height: 50px;
-    text-align: center;
-    overflow:hidden;
-    background:none;
-    text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
+#price {
+  width: auto;
+  font-weight: 900;
 }
 
-#updatePrice{
-    width:130px; 
-    text-align: center;
-    background:none;
-    font-weight: 900;
-    text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
+#updatePrice {
+  width: 80px !important;
+  background: none;
+  text-align: center;
+  font-weight: 900;
+  text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-style: none;
+  width: 100px;
+  margin: 10px;
 }
 
-#urlDiv{
-    float: right;
+#urlDiv {
+  font-weight: 900;
 }
 
-#priceh4{
-    display: inline-block;
+#updateUrl {
+  border-style: none;
+  background: none;
+  width: 120px;
+  margin: 10px;
 }
 
-#updateUrl{
-    background:none;
-    width:230px; 
+#priceDiv {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+#buttonsDiv {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
