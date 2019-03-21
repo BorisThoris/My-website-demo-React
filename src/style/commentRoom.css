@@ -1,0 +1,15 @@
+#commentRoom {
+  width: auto;
+  max-width: 1400px;
+  height: 1400px;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  justify-items: center;
+
+  background: rgba(199, 221, 197, 0.267);
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  border-radius: 2%;
+}

@@ -22,6 +22,7 @@ export default class Register extends React.Component {
       this.setState({
         [e.target.name]: e.target.checked
       });
+      console.log(e.target.name);
     } else {
       this.setState({
         [e.target.name]: e.target.value
@@ -57,7 +58,7 @@ export default class Register extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="manage">
         <center>
           <form action="#/register" method="post" id="registerForm">
             <label>

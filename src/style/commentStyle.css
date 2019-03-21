@@ -1,0 +1,44 @@
+#commentCard {
+  border-color: black;
+  border-style: solid;
+  border-radius: 2%;
+  background: rgba(199, 221, 197, 0.507);
+  margin: 10px auto;
+  height: 400px;
+  width: 1350px;
+  display: flex;
+}
+
+#commentText {
+  text-align: center;
+  font-size: 25px;
+  font-color: black !important;
+  text-shadow: 20px 5px rgba(0, 0, 0, 0.089);
+  margin: 10px 20px;
+  width: 1025px;
+  resize: none;
+  height: 200px;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+#otherInfo {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  width: 280px;
+  height: 230px;
+  margin: 10px;
+}
+
+#userPicCom {
+  margin: auto;
+  border-radius: 35%;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+}
+
+#nameAndRating {
+  font-weight: 0 !important;
+  display: flex;
+  justify-content: space-between;
+}

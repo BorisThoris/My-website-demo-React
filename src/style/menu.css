@@ -1,6 +1,7 @@
 #menu {
   background-color: rgba(199, 221, 197, 0.267);
   margin-bottom: 10px;
+  margin: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
   border-radius: 2%;
   padding: 1px;
@@ -30,6 +31,7 @@
   padding: 30px 30px;
   text-decoration: tomato;
   text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
+  font-size: 30px;
 }
 
 #menu li a:hover {

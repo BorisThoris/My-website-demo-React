@@ -1,3 +1,16 @@
+#productCreater2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
+  border-radius: 2%;
+  margin: 13px 20px;
+  display: inline-block;
+  text-align: center;
+  font-family: arial;
+  left: 0;
+  height: 320px;
+  min-width: 350px;
+  background: rgba(199, 221, 197, 0.267);
+}
+
 #productCreater {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
   border-radius: 2%;
@@ -22,6 +35,11 @@ button2 {
   cursor: pointer;
   width: 60%;
   font-size: 18px;
+  transition: 0.5s;
+}
+
+button2:hover {
+  transform: scale(1.2);
 }
 
 #crtDescription2 {
@@ -38,13 +56,15 @@ button2 {
   background-color: rgba(221, 197, 197, 0.363);
   resize: none;
   margin: 20px 0px;
+  text-align: center;
 }
 
 #crtPrice2 {
-  width: 35%;
+  width: 20%;
   background-color: rgba(221, 197, 197, 0.363);
   resize: none;
   margin: 20px 0px;
+  text-align: center;
 }
 
 #prdPicUrl2 {

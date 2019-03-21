@@ -9,7 +9,8 @@ export default class productCreater extends React.Component {
     crtPrice2: "0",
     crtDescription2: "Description..",
     crtTitle2: "Title..",
-    prdPicUrl2: "Url.."
+    prdPicUrl2: "Url..",
+    isAdmin: sessionStorage.getItem("isAdmin")
   };
 
   onChange = e => {
@@ -24,8 +25,7 @@ export default class productCreater extends React.Component {
     let imgUrl = this.state.prdPicUrl2;
     let productDesc = this.state.crtDescription2;
     let productName = this.state.crtTitle2;
-    let isAdmin = sessionStorage.getItem("isAdmin");
-
+    let isAdmin = this.isAdmin;
     if (isAdmin === "false") {
       notify.showError("Admin Only");
     } else if (price === "") {
@@ -54,57 +54,84 @@ export default class productCreater extends React.Component {
   };
 
   render() {
-    return (
-      <div id="productCreater">
-        <h1 id="creatorTitle">Create</h1>
-
-        <div id="crtTitle">
-          Product
-          <br />
-          <textarea
-            type="text"
-            id="crtTitle2"
-            onChange={e => this.onChange(e)}
-            value={this.state.crtTitle2}
-          />
-        </div>
-
-        <div id="crtDescription">
-          Description
-          <textarea
-            type="text"
-            id="crtDescription2"
-            onChange={e => this.onChange(e)}
-            value={this.state.crtDescription2}
-          />
-        </div>
-
-        <center>
-          <label id="prdPicUrl">
-            Img url:
-            <br />{" "}
-            <input
+    let test;
+    console.log(this.state.isAdmin);
+    if (this.state.isAdmin === "true") {
+      test = (
+        <div id="productCreater">
+          <h1 id="creatorTitle">Create</h1>
+          <div id="crtTitle">
+            Product
+            <br />
+            <textarea
               type="text"
-              id="prdPicUrl2"
+              id="crtTitle2"
               onChange={e => this.onChange(e)}
-              value={this.state.profilePic}
+              value={this.state.crtTitle2}
             />
-          </label>
-        </center>
-
-        <div id="crtPrice">
-          Price
-          <br />
-          <input
-            type="number"
-            id="crtPrice2"
-            onChange={e => this.onChange(e)}
-            value={this.state.crtPrice2}
-          />
+          </div>
+          <div id="crtDescription">
+            Description
+            <textarea
+              type="text"
+              id="crtDescription2"
+              onChange={e => this.onChange(e)}
+              value={this.state.crtDescription2}
+            />
+          </div>
+          <center>
+            <label id="prdPicUrl">
+              Img url:
+              <br />{" "}
+              <input
+                type="text"
+                id="prdPicUrl2"
+                onChange={e => this.onChange(e)}
+                value={this.state.profilePic}
+              />
+            </label>
+          </center>
+          <div id="crtPrice">
+            Price
+            <br />
+            <input
+              type="number"
+              id="crtPrice2"
+              onChange={e => this.onChange(e)}
+              value={this.state.crtPrice2}
+            />
+          </div>
+          <button2 onClick={() => this.onSubmit()}>Create</button2>
         </div>
-
-        <button2 onClick={() => this.onSubmit()}>Create</button2>
-      </div>
-    );
+      );
+    } else {
+      test = (
+        <div id="productCreater2">
+          <h1 id="creatorTitle">Search</h1>
+          <div id="crtTitle">
+            Product Type
+            <br />
+            <textarea
+              type="text"
+              id="crtTitle2"
+              onChange={e => this.onChange(e)}
+              value={this.state.crtTitle2}
+            />
+          </div>
+          <div id="crtPrice">
+            Price Lower Than
+            <br />
+            <input
+              type="number"
+              id="crtPrice2"
+              onChange={e => this.onChange(e)}
+              value={this.state.crtPrice2}
+            />
+          </div>
+          <button2 onClick={() => this.onSubmit()}>Search</button2>
+        </div>
+      );
+    }
+    return test;
   }
 }

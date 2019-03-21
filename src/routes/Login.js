@@ -43,7 +43,7 @@ export default class Login extends React.Component {
   };
   render() {
     return (
-      <div>
+      <div id="manage">
         <center>
           <form id="loginForm">
             <label>
