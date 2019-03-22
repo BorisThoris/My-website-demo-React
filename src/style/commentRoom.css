@@ -1,7 +1,7 @@
 #commentRoom {
-  width: auto;
-  max-width: 1400px;
-  height: 1400px;
+  width: 70vw;
+  min-width: 1400px;
+  height: auto;
   margin: auto;
   padding: 10px;
   display: flex;

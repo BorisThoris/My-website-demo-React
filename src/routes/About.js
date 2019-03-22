@@ -28,7 +28,6 @@ export default class Auth extends React.Component {
           <CommentProp />
           <CommentProp />
           <CommentProp />
-          <CommentProp />
         </div>
       </div>
     );

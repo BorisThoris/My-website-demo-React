@@ -10,11 +10,13 @@
   /* Container styles */
   background-color: rgba(199, 221, 197, 0.267);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
+  transition: 2s;
 }
 
 #manage {
   width: 100%;
   height: 100vh;
+  animation: cardIntro 1s;
 }
 
 #caloguePageMainDiv {
@@ -23,9 +25,59 @@
   margin: auto;
   height: auto;
   max-width: 2000px;
+  animation-name: cardIntro;
+  animation-duration: 1s;
 }
 
 /* Product Cards */
+#arrowLeft {
+  position: absolute;
+  display: inline-block;
+  width: 150px;
+  height: 350px;
+}
+
+#arrowLeftPic {
+  position: absolute;
+  height: 100px;
+  width: 150px;
+  bottom: 30%;
+  left: -20%;
+  opacity: 0;
+}
+
+#arrowRightPic {
+  position: absolute;
+  height: 100px;
+  width: 150px;
+  bottom: 30%;
+  left: +20%;
+  opacity: 0;
+}
+
+#arrowRight {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  width: 150px;
+  height: 350px;
+}
+
+#arrowRightPic:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: none;
+  transform: scale(1.4);
+}
+
+#arrowLeftPic:hover {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+  animation: none;
+  transform: scale(1.4);
+}
 
 #productCardDescription {
   color: black;
@@ -40,7 +92,6 @@
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  display: inline-block;
   max-width: 300px;
   margin: 15px;
   height: auto;
@@ -48,16 +99,18 @@
   text-align: center;
   font-family: arial;
   background-color: rgba(221, 197, 197, 0.363);
+  animation-name: cardIntro;
+  animation-duration: 1s;
+  transition: 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
 }
 
 .title {
   color: black;
   font-size: 18px;
-}
-
-#button3 {
-  color: black;
-  width: 300px;
 }
 
 #productCardImage {
@@ -70,7 +123,43 @@ a {
   color: black;
 }
 
-button:hover,
-a:hover {
-  opacity: 0.7;
+#button3 {
+  color: white;
+  opacity: 1;
+  width: 300px;
+  background-color: black;
+  transition: 0.3s;
+  border-style: none;
+  border-color: none;
+}
+
+.card button:hover {
+  transform: scale(1.1);
+  width: 150px;
+  cursor: pointer;
+}
+
+@keyframes cardIntro {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowsAnim {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.3;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
 }

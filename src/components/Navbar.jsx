@@ -74,7 +74,7 @@ export default class Navbar2 extends React.Component {
         <div id="menu">
           <ul>
             <li>
-              <span clas s="logo">
+              <span class="logo">
                 <img
                   src="https://s1.gifyu.com/images/kill_your_gorilla6.gif"
                   alt="kill_your_gorilla6"

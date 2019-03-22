@@ -5,11 +5,6 @@
   display: inline-block;
 }
 
-#manage {
-  width: 100%;
-  height: 100vh;
-}
-
 #productViewDiv {
   display: flex;
   position: relative;
@@ -42,17 +37,6 @@
   border-radius: 3%;
 }
 
-#description {
-  height: 500px;
-
-  font-weight: 900;
-  border-color: black;
-  border-radius: 10px;
-  border-width: 800;
-
-  text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
-}
-
 #btnUpdate,
 #btnDelete {
   height: 50px;
@@ -68,6 +52,8 @@
 
 #updateDesc {
   resize: none;
+  height: auto;
+  max-height: 540px;
   text-align: center;
   background: white;
   font-weight: 900;
