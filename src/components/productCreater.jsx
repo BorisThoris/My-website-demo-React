@@ -109,8 +109,6 @@ export default class productCreater extends React.Component {
         <div id="productCreater2">
           <h1 id="creatorTitle">Search</h1>
           <div id="crtTitle">
-            Product Type
-            <br />
             <textarea
               type="text"
               id="crtTitle2"

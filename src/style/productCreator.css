@@ -6,37 +6,47 @@
   text-align: center;
   font-family: arial;
   left: 0;
-  height: 360px;
-  min-width: 350px;
+  height: 20vh;
+  width: 20vw;
+  min-width: 140px;
   background: rgba(199, 221, 197, 0.267);
+}
+
+#creatorTitle {
+  font-size: calc(0.2em + 0.7vw);
 }
 
 #productCreater {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.568);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
   border-radius: 2%;
   margin: 13px 20px;
   display: inline-block;
   text-align: center;
   font-family: arial;
   left: 0;
-  height: 700px;
+  height: 85vh;
+  max-height: 700px;
   max-height: 700px;
   min-width: 350px;
   background: rgba(199, 221, 197, 0.267);
 }
 
 button2 {
+  height: 7vh;
+  max-height: 50px;
+  font-size: calc(0.2em + 0.7vw);
   border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
+  padding: 10px;
   color: white;
   background-color: #000;
   text-align: center;
   cursor: pointer;
   width: 60%;
-  font-size: 18px;
-  transition: 0.5s;
 }
 
 button2:hover {
@@ -45,7 +55,9 @@ button2:hover {
 
 #crtDescription2 {
   width: 95%;
-  height: 150px;
+  max-height: 150px;
+  transition: 1s;
+  height: 10vh;
   background-color: rgba(221, 197, 197, 0.363);
   resize: none;
   margin: 20px 0px;
@@ -53,7 +65,8 @@ button2:hover {
 
 #crtTitle2 {
   width: 95%;
-  height: 50px;
+  font-size: calc(0.2em + 0.7vw);
+  height: 5vh;
   background-color: rgba(221, 197, 197, 0.363);
   resize: none;
   margin: 20px 0px;
@@ -66,6 +79,7 @@ button2:hover {
 
 #crtPrice {
   font-weight: 900;
+  font-size: calc(0.2em + 0.7vw);
 }
 
 #crtPrice2 {
