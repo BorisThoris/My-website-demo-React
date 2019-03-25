@@ -43,7 +43,7 @@ export default class Profile extends React.Component {
   };
 
   render() {
-    auth.test("Boris", "lolSad", "lolPic").then(data => {
+    auth.registerNew("Boris", "lolSad", "lolPic").then(data => {
       console.log(data);
     });
     let username = sessionStorage.getItem("username");

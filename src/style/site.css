@@ -17,12 +17,11 @@ body {
 }
 
 footer {
-  display: inline-block;
   text-align: center;
 
   margin: auto;
+  width: 100vw;
 
-  margin: 0px 0px;
   font-size: 60px;
 
   opacity: 0.7;
@@ -32,6 +31,10 @@ footer {
 
 #logo {
   background-image: url("/gorillaLogo.jpg");
+}
+
+#lol {
+  height: auto;
 }
 
 .about {

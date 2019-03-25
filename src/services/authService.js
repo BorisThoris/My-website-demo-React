@@ -25,18 +25,21 @@ let auth = (() => {
     return remote.post("user", "login", "basic", obj);
   }
 
+  function loginNew(username, password) {
+    return remote.post2(
+      "user",
+      `login?username=${username}&password=${password}`
+    );
+  }
+
   function logout() {
     return remote.post("user", "_logout", "Kinvey");
   }
 
-  function test(username, password, profilePic) {
+  function registerNew(username, password, profilePic) {
     // public string profilePic { get; set; }
     // public string username { get; set; }
-    let user = {
-      username: username,
-      password: password,
-      profilePic: profilePic
-    };
+
     return remote.post2(
       "user",
       `register?username=${username}&password=${password}&profilepic=${profilePic}`
@@ -49,7 +52,7 @@ let auth = (() => {
     logout,
     register,
     saveSession,
-    test
+    registerNew
   };
 })();
 export default auth;
