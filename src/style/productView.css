@@ -5,6 +5,15 @@
   display: inline-block;
 }
 
+#arrows {
+  background-color: red;
+  width: 680px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #productViewDiv {
   display: flex;
   position: relative;

@@ -143,6 +143,26 @@ export default class ProductView extends React.Component {
               width="650"
               height="700"
             />
+            <div id="arrows">
+              <div id="arrowLeftProduct">
+                <img
+                  src="https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/07/15064945/Left-Arrow-PNG-Download-Image.png"
+                  alt="Smiley face"
+                  height="42"
+                  width="42"
+                  id="arrowLeftPicProduct"
+                />
+              </div>
+              <div id="arrowRightProduct">
+                <img
+                  src="http://pixsector.com/cache/ef1ee4a1/av85f1b171d762037fe92.png"
+                  alt="Smiley face"
+                  height="42"
+                  width="42"
+                  id="arrowRightPicProduct"
+                />
+              </div>
+            </div>
           </div>
 
           <div id="productInfo">

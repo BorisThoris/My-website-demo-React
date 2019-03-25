@@ -19,8 +19,6 @@ export default class Profile extends React.Component {
   };
 
   onChange = e => {
-    let id = profService.getId();
-
     this.setState({
       [e.target.name]: e.target.value
     });
@@ -45,6 +43,9 @@ export default class Profile extends React.Component {
   };
 
   render() {
+    auth.test("Boris", "lolSad", "lolPic").then(data => {
+      console.log(data);
+    });
     let username = sessionStorage.getItem("username");
     let isAdmin = sessionStorage.getItem("isAdmin");
     if (isAdmin === "false") {
@@ -81,7 +82,12 @@ export default class Profile extends React.Component {
           </label>
 
           <br />
-          <Button id="btnChange" onClick={() => this.onSubmit()} type="submit">
+          <Button
+            id="btnChange"
+            onChange={() => console.log("lol")}
+            onClick={() => this.onSubmit()}
+            type="submit"
+          >
             Change
           </Button>
         </div>
