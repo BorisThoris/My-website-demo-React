@@ -5,7 +5,7 @@
   width: 100vw;
   height: auto;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 7px;
   border-radius: 2%;
   /* Container styles */
   background-color: rgba(199, 221, 197, 0.267);
@@ -24,8 +24,8 @@
   position: relative;
   margin: auto;
   height: auto;
-  max-height: 90vh;
-  width: 80vw;
+
+  width: 96vw;
   animation-name: cardIntro;
   animation-duration: 1s;
 }
@@ -87,7 +87,7 @@
 
 #productCardTitle {
   color: black;
-  font-size: calc(0.2em + 0.7vw);
+  font-size: calc(1vw);
   font-weight: 900;
   text-align: center;
   white-space: nowrap;
@@ -101,10 +101,11 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 600px;
   width: 12vw;
-  height: auto;
-  min-height: 60px;
-  max-height: 600px;
+  height: 20vh;
+  min-height: 50px;
+  max-height: 380px;
   margin: calc(2vh);
+  margin-bottom: 70px;
 
   font-family: arial;
   background-color: rgba(221, 197, 197, 0.363);
@@ -129,17 +130,11 @@
   border-radius: 5%;
 }
 
-a {
-  text-decoration: none;
-  font-size: 22px;
-  color: black;
-}
-
 #button3 {
   position: absolute;
   color: white;
   max-width: 600px;
-  font-size: calc(0.2em + 0.7vw);
+  font-size: calc(1vw);
   white-space: nowrap;
   opacity: 1;
   width: 12vw;

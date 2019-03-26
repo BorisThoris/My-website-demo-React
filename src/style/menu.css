@@ -12,11 +12,6 @@
 }
 
 #menu li {
-  display: inline-block;
-  background-color: red;
-  border-style: solid;
-  border-color: black;
-  height: calc(0.2em + 1.7vw);
 }
 
 #menu a {
@@ -66,9 +61,13 @@
 }
 
 #profile {
+  margin: auto;
+  background-color: red;
+  height: 6vh;
   display: flex;
   justify-content: center;
   justify-items: center;
+  text-align: center;
 }
 
 #profilePicNav {

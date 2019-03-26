@@ -69,7 +69,7 @@ button2:hover {
   font-size: calc(0.2em + 0.7vw);
   height: 5vh;
   background-color: rgba(221, 197, 197, 0.363);
-  resize: none;
+  max-height: 100px;
   margin: 20px 0px;
   text-align: center;
 }

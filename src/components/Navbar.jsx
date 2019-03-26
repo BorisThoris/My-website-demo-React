@@ -65,31 +65,22 @@ export default class Navbar2 extends React.Component {
     } else {
       navProp = (
         <div id="menu">
-          <ul>
-            <li>
-              <span class="logo">
-                <img
-                  src="https://s1.gifyu.com/images/kill_your_gorilla6.gif"
-                  alt="kill_your_gorilla6"
-                  alt="err"
-                  width="90"
-                  height="90"
-                />
-              </span>
-            </li>
-            <li id="about">
-              <a href="/about">About</a>
-            </li>
-            <li>
-              <a href="/home">Media</a>
-            </li>
-            <li>
-              <a href="/login">Login</a>
-            </li>
-            <li>
-              <a href="/register">Register</a>
-            </li>
-          </ul>
+          <img
+            id="logoImg"
+            src="https://s1.gifyu.com/images/kill_your_gorilla6.gif"
+            alt="kill_your_gorilla6"
+            alt="err"
+            width="90"
+            height="90"
+          />
+
+          <a href="/about">About</a>
+
+          <a href="/home">Media</a>
+
+          <a href="/login">Login</a>
+
+          <a href="/register">Register</a>
         </div>
       );
     }

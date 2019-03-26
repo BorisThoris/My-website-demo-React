@@ -13,7 +13,7 @@ import auth from "../services/authService.js";
 export default class Catalogue extends React.Component {
   constructor(props) {
     super(props);
-
+    this.test = "hello";
     this.state = {
       products: []
     };
@@ -30,6 +30,7 @@ export default class Catalogue extends React.Component {
   };
 
   render() {
+    console.log(this.test);
     let Products = this.state.products.map(p => (
       <ProductCard
         price={p.price}
