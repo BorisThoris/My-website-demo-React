@@ -23,50 +23,43 @@ export default class Navbar2 extends React.Component {
 
       navProp = (
         <div id="menu">
-          <ul>
-            <li>
-              <span clas s="logo">
-                <img
-                  src="https://s1.gifyu.com/images/kill_your_gorilla6.gif"
-                  alt="kill_your_gorilla6"
-                  alt="err"
-                  width="90"
-                  height="90"
-                />
-              </span>
-            </li>
-            <li id="about">
-              <a href="/about">Recent Comments</a>
-            </li>
-            <li>
-              <a href="/home">Media</a>
-            </li>
-            <li>
-              <a href="/catalogue">Products</a>
-            </li>
-            <li>
-              <a href="/user-profile">Profile</a>
-            </li>
-            <li>
-              <a onClick={() => this.onSubmit()}>Logout</a>
-            </li>
-            <li2>
-              <div id="/user-profile">
-                Gorilla:{" "}
-                <img
-                  class="profilePic"
-                  src={sessionStorage.getItem("profilePic")}
-                  alt="kill_your_gorilla6"
-                  alt="err"
-                  width="50"
-                  height="50"
-                />
-                <a id="a2" href="/user-profile">
-                  {username}
-                </a>
-              </div>
-            </li2>
-          </ul>
+          <div class="logoLi">
+            <span clas s="logo">
+              <img
+                src="https://s1.gifyu.com/images/kill_your_gorilla6.gif"
+                alt="kill_your_gorilla6"
+                id="logoImg"
+                alt="err"
+                width="90"
+                height="90"
+              />
+            </span>
+          </div>
+
+          <a href="/about">Recent Comments</a>
+
+          <a href="/home">Media</a>
+
+          <a href="/catalogue">Products</a>
+
+          <a href="/user-profile">Profile</a>
+
+          <a onClick={() => this.onSubmit()}>Logout</a>
+
+          <div id="profile">
+            Gorilla:
+            <img
+              id="profilePicNav"
+              src={sessionStorage.getItem("profilePic")}
+              alt="kill_your_gorilla6"
+              alt="err"
+              width="50"
+              height="50"
+            />
+            <div id="a2" href="/user-profile">
+              {username}
+            </div>
+          </div>
         </div>
       );
     } else {

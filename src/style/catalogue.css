@@ -5,7 +5,7 @@
   width: 100vw;
   height: auto;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 30px;
   border-radius: 2%;
   /* Container styles */
   background-color: rgba(199, 221, 197, 0.267);
@@ -24,7 +24,7 @@
   position: relative;
   margin: auto;
   height: auto;
-  max-height: 80vh;
+  max-height: 90vh;
   width: 80vw;
   animation-name: cardIntro;
   animation-duration: 1s;
@@ -90,6 +90,7 @@
   font-size: calc(0.2em + 0.7vw);
   font-weight: 900;
   text-align: center;
+  white-space: nowrap;
 }
 
 .card {
@@ -99,17 +100,17 @@
   justify-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 600px;
-  width: 10vw;
-  height: 20vh;
-  min-height: 30px;
+  width: 12vw;
+  height: auto;
+  min-height: 60px;
   max-height: 600px;
-  margin: 15px;
+  margin: calc(2vh);
 
   font-family: arial;
   background-color: rgba(221, 197, 197, 0.363);
   animation-name: cardIntro;
   animation-duration: 1s;
-  transition: 1s;
+  transition: 0.5s;
 }
 
 #productCardImage {
@@ -139,12 +140,12 @@ a {
   color: white;
   max-width: 600px;
   font-size: calc(0.2em + 0.7vw);
-
+  white-space: nowrap;
   opacity: 1;
-  width: 10vw;
+  width: 12vw;
   max-height: 70px;
   background-color: black;
-  transition: 0.3s;
+  transition: 0.5s;
   border-style: none;
   border-color: none;
 }

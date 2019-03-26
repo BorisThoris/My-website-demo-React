@@ -6,9 +6,10 @@
   text-align: center;
   font-family: arial;
   left: 0;
-  height: 20vh;
+  height: 24vh;
   width: 20vw;
-  min-width: 140px;
+  min-width: 50px;
+  min-height: 260px;
   background: rgba(199, 221, 197, 0.267);
 }
 
@@ -31,7 +32,7 @@
   left: 0;
   height: 85vh;
   max-height: 700px;
-  max-height: 700px;
+
   min-width: 350px;
   background: rgba(199, 221, 197, 0.267);
 }
@@ -82,8 +83,15 @@ button2:hover {
   font-size: calc(0.2em + 0.7vw);
 }
 
+#crtPrice2::-webkit-inner-spin-button,
+#crtPrice2::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #crtPrice2 {
   width: 20%;
+
   background-color: rgba(221, 197, 197, 0.363);
   resize: none;
   margin: 20px 0px;
