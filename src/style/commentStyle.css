@@ -4,21 +4,24 @@
   border-radius: 2%;
   background: rgba(199, 221, 197, 0.507);
   margin: 10px auto;
-  height: 260px;
+  height: 30vh;
   width: 65vw;
+  max-width: 1400px;
   display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
 #commentText {
   text-align: center;
-  font-size: 25px;
+  font-size: calc(5vh);
   font-color: black !important;
 
   text-shadow: 20px 5px rgba(0, 0, 0, 0.089);
-  margin: 10px 20px;
+  margin: auto 20px;
   width: 65vw;
   resize: none;
-  height: 200px;
+  height: 25vh;
   border-radius: 2%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
 }
@@ -27,19 +30,25 @@
   display: flex;
   justify-items: center;
   flex-direction: column;
-  width: 280px;
-  height: 230px;
-  margin: 10px;
+  width: 20vw;
+  height: 25vh;
 }
 
 #userPicCom {
+  position: relative;
   margin: auto;
+  height: 16vh;
+  width: 10vw;
   border-radius: 35%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
 }
 
 #nameAndRating {
-  font-weight: 0 !important;
   display: flex;
   justify-content: space-between;
+}
+
+h2 {
+  font-weight: 0 !important;
+  font-size: calc(4vh) !important;
 }

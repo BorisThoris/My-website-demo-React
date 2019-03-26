@@ -62,7 +62,8 @@
 
 #profile {
   margin: auto;
-  background-color: red;
+  font-weight: 900;
+  text-align: center;
   height: 6vh;
   display: flex;
   justify-content: center;
@@ -83,7 +84,6 @@
 }
 
 #a2 {
-  background-color: Red;
   font-size: calc(0.2em + 0.7vw);
   font-weight: 900;
   text-shadow: 4px 8px 0 rgba(0, 0, 0, 0.1);
