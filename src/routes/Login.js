@@ -1,17 +1,12 @@
 import React from "react";
-
 import { Button } from "antd";
-import NavBar from "../components/Navbar.jsx";
-
-import Footer from "../components/footer.jsx";
-
 import notify from "../services/notify.js";
-import remote from "../services/remote.js";
 import auth from "../services/authService.js";
 import { Redirect } from "react-router-dom";
 import reactDOM from "react";
+import { withRouter } from "react-router-dom";
 
-export default class Login extends React.Component {
+class Login extends React.Component {
   state = {
     username: "",
     email: "",
@@ -37,7 +32,7 @@ export default class Login extends React.Component {
       .then(userData => {
         auth.saveSession(userData);
         notify.showInfo("Logged in successfully!");
-        window.location = "Home";
+        this.props.history.push("Home");
       })
       .catch(() => notify.showError("Login Error"));
   };
@@ -83,3 +78,5 @@ export default class Login extends React.Component {
     );
   }
 }
+
+export default withRouter(Login);

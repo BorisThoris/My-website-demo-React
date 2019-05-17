@@ -2,17 +2,22 @@ import React from "react";
 import auth from "../services/authService.js";
 import notify from "../services/notify.js";
 
-export default class Navbar2 extends React.Component {
-  onSubmit = () => {
+import { Link } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import createHistory from "history/createBrowserHistory";
+
+class Navbar2 extends React.Component {
+  onSubmit() {
     auth
       .logout()
       .then(() => {
         sessionStorage.clear();
         notify.showInfo("User Logged Out!");
-        window.location = "/login";
+        this.props.history.push("/about");
       })
       .catch(notify.handleError);
-  };
+    console.log(":(");
+  }
 
   render() {
     const isLoggedIn = auth.isAuth();
@@ -36,13 +41,15 @@ export default class Navbar2 extends React.Component {
             </span>
           </div>
 
-          <a href="/about">Recent Comments</a>
+          {/* <Link to href={"/about"}>
+            Recent Comments
+          </Link> */}
 
-          <a href="/home">Media</a>
+          <Link to={"/home"}>Media</Link>
 
-          <a href="/catalogue">Products</a>
+          <Link to={"/catalogue"}>Products</Link>
 
-          <a href="/user-profile">Profile</a>
+          <Link to={"/user-profile"}>Profile</Link>
 
           <a onClick={() => this.onSubmit()}>Logout</a>
 
@@ -73,14 +80,14 @@ export default class Navbar2 extends React.Component {
             width="90"
             height="90"
           />
+          {/* 
+          <Link to={"/about"}>About</Link> */}
 
-          <a href="/about">About</a>
+          <Link to={"/home"}>Media</Link>
 
-          <a href="/home">Media</a>
+          <Link to={"/login"}>Login</Link>
 
-          <a href="/login">Login</a>
-
-          <a href="/register">Register</a>
+          <Link to={"/register"}>Register</Link>
         </div>
       );
     }
@@ -88,3 +95,5 @@ export default class Navbar2 extends React.Component {
     return navProp;
   }
 }
+
+export default withRouter(Navbar2);

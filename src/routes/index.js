@@ -11,37 +11,42 @@ import Profile from "./Profile";
 import Catalogue from "./Catalogue.jsx";
 import Product from "./Product";
 import Update from "./Update";
+import history from "../components/history";
 
 export default () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <div id="lol">
       <div id="mainSize">
         <NavBar />
 
         <Switch>
-          <Route exact path="/login" render={props => <Login {...props} />} />
+          <Route exact path={"/login"} render={props => <Login {...props} />} />
           <Route
             exact
-            path="/register"
+            path={"/register"}
             render={props => <Register {...props} />}
           />
-          <Route exact path="/about" render={props => <About {...props} />} />
-          <Route exact path="/" render={props => <Home {...props} />} />
+          <Route exact path={"/about"} render={props => <About {...props} />} />
+          <Route exact path={"/"} render={props => <Home {...props} />} />
           <Route
             exact
-            path="/user-profile"
+            path={"/user-profile"}
             render={props => <Profile {...props} />}
           />
           <Route
             exact
-            path="/catalogue"
+            path={"/catalogue"}
             render={props => <Catalogue {...props} />}
           />
-          <Route exact path="/home" render={props => <Home {...props} />} />
-          <Route exact path="/update" render={props => <Update {...props} />} />
+          <Route exact path={"/home"} render={props => <Home {...props} />} />
           <Route
             exact
-            path="/product-view/:id"
+            path={"/update"}
+            render={props => <Update {...props} />}
+          />
+          <Route
+            exact
+            path={"/product-view/:id"}
             render={props => <Product {...props} />}
           />
           <Route path="*" exact={true} component={About} />

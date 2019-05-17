@@ -23,4 +23,5 @@ import updateView from "./style/update.css";
 
 const App = () => <Routes />;
 
+console.log(process.env.PUBLIC_URL);
 ReactDOM.render(<App />, document.getElementById("root"));
